@@ -134,6 +134,7 @@ code{
 	background-color: #fff3b0;
 	color: #2b2d42;
 	margin: 20px 0px;
+	font-size: 100%;
 }
 
 .snippet{
@@ -188,6 +189,6 @@ footer a:hover{
 	
 	
 	code{
-		font-size: 8px;
+		font-size: 100%;
 	}
 }

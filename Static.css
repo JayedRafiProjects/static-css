@@ -275,6 +275,70 @@ td{
 	font-style: italic;
 }
 
+.text-center{
+	text-align: center;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.text-justify{
+	text-align: justify;
+}
+
+.bg-black{
+	background-color: black;
+}
+
+.t-black{
+	color: black;
+}
+
+.bg-white{
+	background-color: white;
+}
+
+.t-white{
+	color: white;
+}
+
+.bg-yellow{
+	background-color: #fff3b0;
+}
+
+.t-yellow{
+	color: #fff3b0;
+}
+
+.bg-orange{
+	background-color: #e76f51;
+}
+
+.t-orange{
+	color: #e76f51;
+}
+
+.bg-acqua{
+	background-color: #9bf6ff;
+}
+
+.t-acqua{
+	color: #9bf6ff;
+}
+
+.bg-green{
+	background-color: #52b788;
+}
+
+.t-green{
+	color: #52b788;
+}
+
 @media only screen and (max-width: 600px) {
 	.header{
 		padding: 20px 25px;

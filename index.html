@@ -26,7 +26,7 @@
 	<p><a href="#body">Body</a></p>
 	<p><a href="#sidenav">Side Navigation</a></p>
 	<p><a href="#container">Container</a></p>
-	<p><a href="">Grid</a></p>
+	<p><a href="#grid">Grid</a></p>
 	<p><a href="">Table</a></p>
 	<p><a href="">Typography</a></p>
 	<p><a href="">Color</a></p>
@@ -45,14 +45,17 @@
 	<p id="intro" class="title1">Introduction</p>
 	<p><a href="#" target="_self">Static.css</a> is a simple light css library for building web-docs / simple web-pages. Unlike most css frameworks it does not contain too many contents; which eventually helps to build a lighter web platform . It gives exacly what you initially need for building web-doc / web-page. And this documentation helps to override for further customization. As most of you already assumed, this library is not suited for building a dynamic web-app. It is specially designed for building simple light weight web pages. Even though it is a lighter library compared to other css frameworks, it covers almost all essential features you need to create your page. Also a cool feature, this library is not JavaScript dependent! Though many people may see this as a drawback, it is intentionally done to make the library light weight and use the full potential of HTML+CSS (like old websites!).</p>
 	<p>To start using this libray either use <a href="#" target="_self">stylesheet links</a> or download the <a href="#" target="_self">bundle</a>. And follow the <a href="#" target="_self">Getting Started</a> section to know more about tags &amp; how to override for further customization.</p>
-	<p class="text-pos-center"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>	
+	<p class="text-pos-center"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+	
+
+		
 	<p id="development" class="title1">Development</p>
 	<p>Static.css intially developed by:</p>
 	<p><ul>
 		<li><a href="https://jayedrafi.com" title="Jayed" target="new">Jayed Rafi (jayedrafi@outlook.com)</a></li>
 	</ul></p>
 	<p>This project is open souce. Feel free to introduce any new features or other further development. Visit <a href="#" target="new">GitHub</a> repository.</p>
-	
+
 	<p id="install" class="title1">Download / Installation</p>
 	<p>For quick access I recommend using the direct link to our library. Use one from Static.min.css / Static.css file. Both are same but the .min version has all the unnecessary character removed to make the file size smaller.</p>
 	<p>Copy direct link for Static.css:</p>
@@ -61,7 +64,7 @@
 	<p class="highlight-code">https://jayedrafi.com/......,in.css</p>
 	<p>Or, Download the Static.css bundle file:</p>
 	<p><a href="#" target="new">Download Bundle</a></p>
-	
+
 	<p id="gt" class="title1">Getting Started</p>
 	<p>This sections covers the details about existing tags and override process.</p>
 	
@@ -188,7 +191,105 @@
 	<li>Border removal class: <span class="snippet">rm-border</span></li>
 	<li>Transparent backgroung class: <span class="snippet">rm-bg</span></li>
 	</ul></p>
-	<p class="title1">Grid</p>
+	<p id="grid" class="title1">Grid</p>
+	<p class="emphasis">Option 1: 2 column grid</p>
+	<div class="grid-2">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+	</div>
+	<code>
+	<xmp>
+	<div class="grid-2">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+	</div>
+	</xmp>
+	</code>
+
+	<p class="emphasis">Option 2: 3 column grid</p>
+	<div class="grid-3">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+	</div>
+	<code>
+	<xmp>
+	<div class="grid-3">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+	</div>
+	</xmp>
+	</code>
+
+	<p class="emphasis">Option 3: 4 column grid</p>
+	<div class="grid-4">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+		<div class="grid-content">Item 7</div>
+		<div class="grid-content">Item 8</div>
+	</div>
+	<code>
+	<xmp>
+	<div class="grid-4">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+		<div class="grid-content">Item 7</div>
+		<div class="grid-content">Item 8</div>
+	</div>
+	</xmp>
+	</code>
+
+	<p class="emphasis">Option 4: 5 column grid</p>
+	<div class="grid-5">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+		<div class="grid-content">Item 7</div>
+		<div class="grid-content">Item 8</div>
+		<div class="grid-content">Item 9</div>
+		<div class="grid-content">Item 10</div>
+	</div>
+	<code>
+	<xmp>
+	<div class="grid-5">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+		<div class="grid-content">Item 7</div>
+		<div class="grid-content">Item 8</div>
+		<div class="grid-content">Item 9</div>
+		<div class="grid-content">Item 10</div>
+	</div>
+	</xmp>
+	</code>
+	
+	<p class="title1">Table</p>
+	
 	</div>
 </body>
 	<footer>

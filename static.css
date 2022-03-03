@@ -44,14 +44,6 @@ body{
 	border-width: 2px;
 }
 
-.rm-border{
-	border: none;
-}
-
-.rm-bg{
-	background-color: transparent;
-}
-
 .side-nav-left{
 	display: block;
 	background-color: #161a1d;
@@ -241,6 +233,14 @@ footer a:hover{
 	border: solid;
 	border-color: #161a1d;
 	border-width: 1px;
+}
+
+.rm-bg{
+	background-color: transparent;
+}
+
+.rm-border{
+	border: none;
 }
 
 @media only screen and (max-width: 600px) {

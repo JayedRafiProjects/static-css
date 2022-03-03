@@ -257,7 +257,26 @@ td{
 	padding: 5px;
 }
 
+.image-sm{
+	width: 30%;
+	border: solid;
+	border-color: #161a1d;
+	border-width: 1px;
+}
 
+.image-md{
+	width: 50%;
+	border: solid;
+	border-color: #161a1d;
+	border-width: 1px;
+}
+
+.image-lg{
+	width: 100%;
+	border: solid;
+	border-color: #161a1d;
+	border-width: 1px;
+}
 
 .rm-bg{
 	background-color: transparent;

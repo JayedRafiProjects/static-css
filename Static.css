@@ -339,6 +339,38 @@ td{
 	color: #52b788;
 }
 
+.bg-red{
+	background-color: #f94144;
+}
+
+.t-red{
+	color: #f94144;
+}
+
+.bg-navy-blue{
+	background-color: navy;
+}
+
+.t-navy-blue{
+	color: navy;
+}
+
+.bg-dark-gray{
+	background-color: #6c757d;
+}
+
+.t-dark-gray{
+	color: #6c757d;
+}
+
+.bg-gray{
+	background-color: #dee2e6;
+}
+
+.t-gray{
+	color: #dee2e6;
+}
+
 @media only screen and (max-width: 600px) {
 	.header{
 		padding: 20px 25px;
@@ -376,5 +408,45 @@ td{
 	
 	code{
 		font-size: 5px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.header{
+		padding: 20px 25px;
+	}
+	
+	.header-logo{
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0px;
+	}
+	
+	.header-text{
+		font-size: 25px;
+		line-height: normal;
+		text-align: center;
+	}
+	
+	.side-nav-left{
+		float: none;
+		width: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.side-nav-right{
+		float: none;
+		width: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	code{
+		font-size: 8px;
 	}
 }

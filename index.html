@@ -15,7 +15,7 @@
 	<p class="header-text">Static.css Web-Document</p>
 	</div>
 	
-	<div class="side-nav">
+	<div class="side-nav-left">
 	<p class="topic">Introduction</p>
 	<p><a href="#intro">Static.css</a></p>
 	<p><a href="#development">Development</a></p>
@@ -25,7 +25,7 @@
 	<p><a href="#heading">Heading</a></p>
 	<p><a href="#body">Body</a></p>
 	<p><a href="#sidenav">Side Navigation</a></p>
-	<p><a href="">Container</a></p>
+	<p><a href="#container">Container</a></p>
 	<p><a href="">Grid</a></p>
 	<p><a href="">Table</a></p>
 	<p><a href="">Typography</a></p>
@@ -104,10 +104,11 @@
 	</code>
 	
 	<p id = "body" class="title1">Body</p>
-	<p>First, understand the layout. Usuall all tags except <span class="snippet">&lt;footer&gt;</span> tag should remain inside HTML body.</p>
+	<p>Body contains most parts of the site layout. All tags except <span class="snippet">&lt;footer&gt;</span> tag should remain inside HTML body.</p>
 	
 	<p class="emphasis">Style option 1: Body without side navigation</p>
-	<p>In this case use <span class="snippet">content</span> tag.</p>
+	<p>In this case use only <span class="snippet">heading</span> class &amp; <span class="snippet">content</span> class inside HTML body.
+	You can also opt-out heading by not using the <span class="snippet">heading</span> class.</p>
 	<img src="./image/page-layout-1.svg" alt="layout" width="60%">
 	<code>
 	<xmp>
@@ -118,13 +119,13 @@
 	</body>	
 	</xmp>
 	</code>
-	<p class="emphasis">Style option 2: Body with side navigation</p>
-	<p>For side navigation use <span class="snippet">side-nav</span> tag and then <span class="snippet">content</span> tag inside HTML body.</p>
+	<p class="emphasis">Style option 2: Body with left hand navigation</p>
+	<p>Following from option 1, to add an left hand navigation use <span class="snippet">side-nav-left</span> class before <span class="snippet">content</span> class.</p>
 	<img src="./image/page-layout-2.svg" alt="layout" width="60%">
 	<code>
 	<xmp>
 	<body>
-		<div class="side-nav">
+		<div class="side-nav-left">
 			<p class="topic"> TOPIC NAME </p>
 			<p><a href="#Static.css"> OPTION#1 </a></p>
 			<p><a href="#Static.css"> OPTION#2 </a></p>
@@ -135,9 +136,53 @@
 	</body>	
 	</xmp>
 	</code>
-	
+	<p class="emphasis">Style option 3: Body with right hand navigation</p>
+	<p>Following from option 1, to add an right hand navigation use <span class="snippet">side-nav-right</span> class before <span class="snippet">content</span> class.</p>
+	<code>
+	<xmp>
+	<body>
+		<div class="side-nav-right">
+			<p class="topic"> TOPIC NAME </p>
+			<p><a href="#Static.css"> OPTION#1 </a></p>
+			<p><a href="#Static.css"> OPTION#2 </a></p>
+		</div>
+		<div class="content">
+		
+		</div>	
+	</body>	
+	</xmp>
+	</code>
 	<p id="sidenav" class="title1">Side Navigation</p>
-	<p></p>
+	<p>As discussed in the previous section, you can choose from two side navigation options (left &amp; right). Both options are built with device compatibility feature.
+	Here are some information you should know about default side navigations:</p>
+	<p>Left hand side navigation class: <span class="snippet">side-nav-left</span></p>
+	<p>Right hand side navigation class: <span class="snippet">side-nav-right</span></p>
+	<p>
+	<ul>
+	<li>Highlight topic class: <span class="snippet">topic</span></li>
+	<li>Menu options with/without hyperlink: Use <span class="snippet">&lt;p&gt;</span> tag for adding options. And <span class="snippet">&lt;a&gt;</span> for hyperlink.</li>
+	<li>Rounded corner design: Add <span class="snippet">round-nav</span> class with side-nav class.</li>
+	</ul>
+	</p>
+	<code>
+	<xmp>
+	<body>
+		<div class="side-nav-left round-nav">
+			
+			<p class="topic">Topic</p>
+			<p>Option 1</p>
+			<p>Option 2</p>
+			
+			<p class="topic">Topic</p>
+			<p><a href="#" target="_self">Option 1</a></p>
+			<p><a href="#" target="_self">Option 2</a></p>
+			
+		</div>
+	</body>	
+	</xmp>
+	</code>
+	<p id="container" class="title1">Container</p>
+	<p>Basic container details are discussed in <a href="#body" target="_self">Body</a> section.</p>
 	</div>
 </body>
 	<footer>

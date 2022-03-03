@@ -5,12 +5,16 @@
  */
 html{
 	font-family: sans-serif;
-	overflow-y: auto;
 	font-size: 16px;
+	height: 100vh;
 }
 
 body{
 	text-align: left;
+}
+
+.fixed-status{
+	position: fixed;
 }
 
 .header{
@@ -19,7 +23,6 @@ body{
 	border-bottom-style: solid;
 	border-bottom-color: #161a1d;
 	border-bottom-width: 2px;
-
 }
 
 .header-logo{
@@ -36,13 +39,14 @@ body{
 .content{
 	width: auto;
 	padding: 20px;
+	overflow-y: auto;
 }
 
 .side-nav{
 	display: block;
 	background-color: #161a1d;
 	width: 200px;
-	min-height: 100vh;
+	height: 100%;
 	float: left;
 	margin-right: 20px;
 	padding: 20px 20px;
@@ -65,6 +69,81 @@ body{
 .side-nav .topic{
 	font-size: 16px;
 	color: #9bf6ff;
+}
+
+.title1{
+	font-size: 25px;
+	color: #e76f51;
+}
+
+.title2{
+	font-size: 20px;
+	color: #e76f51;
+}
+
+.emphasis{
+	font-weight: bold;
+}
+
+.text-pos-center{
+	text-align: center;
+}
+
+.text-pos-left{
+	text-align: left;
+}
+
+.text-pos-right{
+	text-align: right;
+}
+
+.text-pos-justify{
+	text-align: justify;
+}
+
+a{
+	color: #e76f51;
+	text-decoration: underline;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+ol{
+	list-style-position: inside;
+}
+
+.highlight-code{
+	display: grid;
+	background-color: #fff3b0;
+	padding: 20px;
+	color: #2b2d42;
+	text-align: center;
+}
+
+code{
+	display: grid;
+	background-color: #fff3b0;
+	color: #2b2d42;
+	margin: 20px 0px;
+	padding: 5px;
+}
+
+.snippet{
+	display: inline-block;
+	color: #ee9b00;
+}
+
+footer{
+	padding: 5px 20px;
+	color: white;
+	background-color: #161a1d;
 }
 
 @media (max-width: 900px) {

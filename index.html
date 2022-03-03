@@ -11,38 +11,125 @@
 <body>
 	<div class="header">
 	<img src="./image/scss.jpg" alt="Girl in a jacket" class="header-logo">
-	<p class="header-text">Static.css Documentation</p>
+	<p class="header-text">Static.css Web-Doc</p>
 	</div>
 	
 	<div class="side-nav">
 	<p class="topic">Introduction</p>
-	<p><a href="">Static.css</a></p>
+	<p><a href="#Static.css">Static.css</a></p>
 	<p><a href="">Development</a></p>
 	<p><a href="">Download / Installation</a></p>
 		
 	<p class="topic">Getting Started</p>
 	<p><a href="">Heading</a></p>
 	<p><a href="">Body</a></p>
-	<p><a href="">Footer</a></p>
-	<p><a href="">Navigation</a></p>
+	<p><a href="">Side Navigation</a></p>
+	<p><a href="">Container</a></p>
 	<p><a href="">Grid</a></p>
 	<p><a href="">Table</a></p>
 	<p><a href="">Typography</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
-	<p><a href="">Color</a></p>
+
 	</div>
 	
 	<div class="content">
-	<p>Trevor began his career with the Department of Natural Resources as an emergency firefighter in the Eastern Region in 1979, fighting fires and servicing fire equipment in Lac du Bonnet. In April of 1983 Trevor was hired as a crewmember on the Lac du Bonnet Firetac crew, and was promoted to Crew Leader in 1985. This was a position which he held for many years before joining the Provincial Air Attack Program in 1996. In 2013, Trevor was promoted to the Supervisor of the Air Attack Program, providing leadership and developing new staff over the years. In his new role as Fire Operations Manager, Trevor has been responsible for overseeing the Provincial Air Attack contract and providing leadership on all aspects of Aviation Management.</p>
+	<p class="title1">Introduction</p>
+	<p><a href="#" target="_self">Static.css</a> is a simple light css library for building web-docs / simple web-pages. Unlike most css frameworks it does not contain too many contents; which eventually helps to build a lighter web platform . It gives exacly what you initially need for building web-doc / web-page. And this documentation helps to override for further customization. As most of you already assumed, this library is not suited for building a dynamic web-app. It is specially designed for building simple light weight web pages. Even though it is a lighter library compared to other css frameworks, it covers almost all essential features you need to create your page. Also a cool feature, this library is not JavaScript dependent! Though many people may see this as a drawback, it is intentionally done to make the library light weight and use the full potential of HTML+CSS (like old websites!).</p>
+	<p>To start using this libray either use <a href="#" target="_self">stylesheet links</a> or download the <a href="#" target="_self">bundle</a>. And follow the <a href="#" target="_self">Getting Started</a> section to know more about tags &amp; how to override for further customization.</p>
+	<p class="text-pos-center"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>	
+	<p class="title1">Development</p>
+	<p>Static.css intially developed by:</p>
+	<p><ul>
+		<li><a href="https://jayedrafi.com" title="Jayed" target="new">Jayed Rafi</a></li>
+	</ul></p>
+	<p>This project is open souce. Feel free to introduce any new features or other further development. Visit <a href="#" target="new">GitHub</a> repository.</p>
+	
+	<p class="title1">Download / Installation</p>
+	<p>For quick access I recommend using the direct link to our library. Use one from Static.min.css / Static.css file. Both are same but the .min version has all the unnecessary character removed to make the file size smaller.</p>
+	<p>Copy direct link for Static.css:</p>
+	<p class="highlight-code">https://jayedrafi.com/......,in.css</p>
+	<p>Copy direct link for Static.min.css:</p>
+	<p class="highlight-code">https://jayedrafi.com/......,in.css</p>
+	<p>Or, Download the Static.css bundle file:</p>
+	<p><a href="#" target="new">Download Bundle</a></p>
+	
+	<p class="title1">Getting Started</p>
+	<p>This sections covers the details about existing tags and override process.</p>
+	
+	<p class="title1">Heading</p>
+	<p class="emphasis">Style option 1: Logo + Title</p>
+	<div class="header">
+	<img src="./image/scss.jpg" alt="Girl in a jacket" class="header-logo">
+	<p class="header-text">Title</p>
+	</div>
+	<code>
+	Source:
+	<xmp>
+	<div class="header">
+		<img src="./image_folder/logo.jpg" alt="logo" class="header-logo">
+		<p class="header-text">Title</p>
+	</div>	
+	</xmp>
+	</code>
+	<p class="emphasis">Style option 2: Title</p>
+	<div class="header">
+	<p class="header-text">Title</p>
+	</div>
+	<code>
+	Source:
+	<xmp>
+	<div class="header">
+		<p class="header-text">Title</p>
+	</div>	
+	</xmp>
+	</code>
+	<p class="emphasis">Adding background color: Applicable for both option 1 &amp; 2</p>
+	<div class="header" style="background-color: #b6ccfe;">
+	<p class="header-text">Title</p>
+	</div>
+	<p>Use the source code below to add color. Only replace the color code (#b6ccfe) into desired color.</p>
+	<code>
+	Source:
+	<xmp>
+	<div class="header" style="background-color: #b6ccfe;">
+	<p class="header-text">Title</p>
+	</div>
+	</xmp>
+	</code>
+	
+	<p class="title1">Body</p>
+	<p>Usuall all tags except <span class="snippet">&lt;footer&gt;</span> tag should remain inside HTML body.</p>
+	<p class="emphasis">Style option 1: Body without side navigation</p>
+	<p>In this case use <span class="snippet">content</span> tag.</p>
+	<code>
+	Source:
+	<xmp>
+	<body>
+		<div class="content">
+		
+		</div>	
+	</body>	
+	</xmp>
+	</code>
+	<p class="emphasis">Style option 2: Body with side navigation</p>
+	<p>For side navigation use <span class="snippet">side-nav</span> tag and then <span class="snippet">content</span> tag inside HTML body.</p>
+	<code>
+		Source:
+	<xmp>
+	<body>
+		<div class="side-nav">
+			<p class="topic">TOPIC NAME</p>
+			<p><a href="#Static.css">OPTION#1</a></p>
+			<p><a href="#Static.css">OPTION#2</a></p>
+		</div>
+		<div class="content">
+		
+		</div>	
+	</body>	
+	</xmp>
+	</code>
 	</div>
 </body>
+	<footer>
+	<p>This is</p>
+	</footer>
 </html>

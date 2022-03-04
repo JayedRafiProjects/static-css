@@ -1,2 +1,2 @@
 # static-css
-Static CSS Library - Repo
+Read the web-document.

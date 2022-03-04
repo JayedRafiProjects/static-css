@@ -257,6 +257,10 @@ td{
 	padding: 5px;
 }
 
+.image-profile{
+	border-radius: 50%;
+}
+
 .image-sm{
 	width: 30%;
 	border: solid;

@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" href="./image/scss.jpg">
+<title>Static.css</title>
+<link rel="stylesheet" href="./style/Static.css"> 
+</head>
+
+<body>
+	<div class="header">
+	<img src="./image/scss.jpg" alt="logo" class="header-logo">
+	<p class="header-text">Static.css Web-Document</p>
+	</div>
+	
+	<div class="side-nav-left">
+	<p class="topic">Introduction</p>
+	<p><a href="#intro">Static.css</a></p>
+	<p><a href="#development">Development</a></p>
+	<p><a href="#install">Download / Installation</a></p>
+		
+	<p id="#gt" class="topic">Getting Started</p>
+	<p><a href="#heading">Heading</a></p>
+	<p><a href="#body">Body</a></p>
+	<p><a href="#sidenav">Side Navigation</a></p>
+	<p><a href="#container">Container</a></p>
+	<p><a href="#grid">Grid</a></p>
+	<p><a href="#table">Table</a></p>
+	<p><a href="#typography">Typography</a></p>
+	<p><a href="#color">Color</a></p>
+	<p><a href="#image">Image</a></p>
+	<p><a href="#footer">Footer</a></p>
+	<p id="#resource" class="topic">External Resources</p>
+	<p><a href="https://github.com/JayedRafiProjects/static-css">Static.css GitHub</a></p>
+	<p><a href="https://developer.mozilla.org/en-US/">MDN Web Doc</a></p>
+	<p><a href="https://www.w3.org/standards/">W3C standards</a></p>
+
+	</div>
+	
+	<div class="content">
+	<p id="intro" class="title1">Introduction</p>
+	<p><a href="https://jayedrafi.com/static-css/" target="_self">Static.css</a> is a simple light css library for building web-docs / simple web-pages. Unlike most css frameworks it does not contain too many contents; which eventually helps to build a lighter web platform . It gives exacly what you initially need for building web-doc / web-page. And this documentation helps to override for further customization. As most of you already assumed, this library is not suited for building a dynamic web-app. It is specially designed for building simple light weight web pages. Even though it is a lighter library compared to other css frameworks, it covers almost all essential features you need to create your page. Also a cool feature, this library is not JavaScript dependent! Some people may see this as a drawback, it is intentionally done to make the library light weight and use the full potential of HTML+CSS (like old websites!).</p>
+	<p>To start using this libray either use <a href="#install" target="_self">stylesheet links</a> or download the <a href="#install" target="_self">bundle</a>. And follow the <a href="#gt" target="_self">Getting Started</a> section to know more about tags &amp; how to override for further customization.</p>
+	<p class="text-center"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+	
+
+		
+	<p id="development" class="title1">Development</p>
+	<p>Static.css intially developed by:</p>
+	<p><ul>
+		<li><a href="https://jayedrafi.com" title="Jayed" target="new">Jayed Rafi (jayedrafi@outlook.com)</a></li>
+	</ul></p>
+	<p>This project is open souce. Feel free to introduce any new features or other further development. Visit <a href="#" target="new">GitHub</a> repository.</p>
+
+	<p id="install" class="title1">Download / Installation</p>
+	<p class="emphasis">Direct link:</p>
+	<p>For quick access I recommend using the direct link to our library. Use one from Static.min.css / Static.css file. Both are same but the .min version has all the unnecessary character removed to make the file size smaller.</p>
+	<p>Copy direct link for Static.css:</p>
+	<p class="highlight-code">https://jayedrafi.com/static-css/link/Static.css</p>
+	<p>Copy direct link for Static.min.css:</p>
+	<p class="highlight-code">https://jayedrafi.com/static-css/link/Static.min.css</p>
+	<p class="emphasis">Bundle pack:</p>
+	<p>Download the Static.css bundle file: <a href="./download/Static.css.Bundle.zip" target="new">Download Bundle</a></p>
+
+	<p id="gt" class="title1">Getting Started</p>
+	<p>This sections covers the details about existing tags and override process.</p>
+	
+	<p id="heading" class="title1">Heading</p>
+	<p class="emphasis">Heading classes:</p>
+	<p>
+	<ul>
+	<li>Heading class: <span class="snippet">header</span></li>
+	<li>Heading logo class: <span class="snippet">header-logo</span></li>
+	<li>Heading text class: <span class="snippet">header-text</span></li>
+	</ul>
+	</p>
+	<p class="emphasis">Style 1: Logo with text</p>
+	<div class="header">
+	<img src="./image/scss.jpg" alt="logo" class="header-logo">
+	<p class="header-text">Title</p>
+	</div>
+	<code>
+	<xmp>
+  <div class="header">
+  <img src="./image_folder/logo.jpg" alt="logo" class="header-logo">
+  <p class="header-text">Title</p>
+	</div>	
+	</xmp>
+	</code>
+	<p class="emphasis">Style option 2: Text</p>
+	<div class="header">
+	<p class="header-text">Title</p>
+	</div>
+	<code>
+	<xmp>
+  <div class="header">
+  <p class="header-text">Title</p>
+  </div>	
+	</xmp>
+	</code>
+	<p class="emphasis">Add background/text color:</p>
+	<p>Use Color section to pick desired color and use the class as following.</p>
+	<div class="header bg-navy-blue t-white">
+	<p class="header-text">Title</p>
+	</div>
+	<code>
+	<xmp>
+	<div class="header bg-navy-blue t-white">
+	<p class="header-text">Title</p>
+	</div>
+	</xmp>
+	</code>
+	
+	<p id = "body" class="title1">Body</p>
+	<p>Body contains most parts of the site layout. All tags except <span class="snippet">footer</span> tag should remain inside HTML body.</p>
+	
+	<p class="emphasis">Layout 1: Body with only container (with/without heading)</p>
+	<p>For layout 1 use only <span class="snippet">heading</span> class &amp; <span class="snippet">content</span> class inside HTML body.
+	You can also opt-out heading by not using the <span class="snippet">heading</span> class.</p>
+	<img src="./image/page-layout-1.svg" alt="layout" width="60%" class="image-center">
+	<code>
+	<xmp>
+	<body>
+		<div class="content">
+		
+		</div>	
+	</body>	
+	</xmp>
+	</code>
+	<p class="emphasis">Layout 2: Body with left/right hand navigation (with/without heading)</p>
+	<p>Following from layout 1, to add an left/right hand navigation use <span class="snippet">side-nav-left</span> / <span class="snippet">side-nav-right</span> class before <span class="snippet">content</span> class.</p>
+	<img src="./image/page-layout-2.svg" alt="layout" width="60%" class="image-center">
+	<code>
+	<xmp>
+	<body>
+		<div class="side-nav-left">
+			<p class="topic"> TOPIC NAME </p>
+			<p><a href="#"> OPTION#1 </a></p>
+			<p><a href="#"> OPTION#2 </a></p>
+		</div>
+		<div class="content">
+		
+		</div>	
+	</body>	
+	</xmp>
+	</code>
+	<p id="sidenav" class="title1">Side Navigation</p>
+	<p>Following from discussion in the <a href="#body" target="_self">Body</a> section, Static.css offers two side navigation options (left &amp; right). Both options are built with device compatibility feature.</p>
+	<p>Note: Default side navigation design is similar to the side navigation on this web-document.</p>
+	<p class="emphasis">Side navigation clases:</p>
+	<p>
+	<ul>
+	<li>Left hand side navigation class: <span class="snippet">side-nav-left</span></li>
+	<li>Right hand side navigation class: <span class="snippet">side-nav-right</span></li>
+	</ul>
+	</p>
+	<p class="emphasis">Inside classes:</p>
+	<p>
+	<ul>
+	<li>Highlight topic class: <span class="snippet">topic</span></li>
+	<li>Menu options with/without hyperlink tag: <span class="snippet">&lt;p&gt;</span> tag for adding options and <span class="snippet">&lt;a&gt;</span> for hyperlink.</li>
+	<li>Rounded corner design class: <span class="snippet">round-nav</span> class with (<span class="snippet">side-nav-left</span>/<span class="snippet">side-nav-left</span>) class.</li>
+	</ul>
+	</p>
+	<code>
+	<xmp>
+	<body>
+		<div class="side-nav-left round-nav">
+			
+			<p class="topic">Topic</p>
+			<p>Option 1</p>
+			<p>Option 2</p>
+			
+			<p class="topic">Topic</p>
+			<p><a href="#" target="_self">Option 1</a></p>
+			<p><a href="#" target="_self">Option 2</a></p>
+			
+		</div>
+	</body>	
+	</xmp>
+	</code>
+	<p id="container" class="title1">Container</p>
+	<p>Container class: <span class="snippet">content</span></p>
+	<p>Basic container details are discussed in the <a href="#body" target="_self">Body</a> section.</p>
+	<p class="emphasis">Customization options:</p>
+	<p><ul>
+	<li>Border removal class: <span class="snippet">rm-border</span></li>
+	</ul></p>
+	<p id="grid" class="title1">Grid</p>
+	<p class="emphasis">2 column:</p>
+	<div class="grid-2">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+	</div>
+	<code>
+	<xmp>
+	<div class="grid-2">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+	</div>
+	</xmp>
+	</code>
+
+	<p class="emphasis">3 column:</p>
+	<div class="grid-3">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+	</div>
+	<code>
+	<xmp>
+	<div class="grid-3">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+	</div>
+	</xmp>
+	</code>
+
+	<p class="emphasis">4 column:</p>
+	<div class="grid-4">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+		<div class="grid-content">Item 7</div>
+		<div class="grid-content">Item 8</div>
+	</div>
+	<code>
+	<xmp>
+	<div class="grid-4">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+		<div class="grid-content">Item 7</div>
+		<div class="grid-content">Item 8</div>
+	</div>
+	</xmp>
+	</code>
+
+	<p class="emphasis">5 column:</p>
+	<div class="grid-5">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+		<div class="grid-content">Item 7</div>
+		<div class="grid-content">Item 8</div>
+		<div class="grid-content">Item 9</div>
+		<div class="grid-content">Item 10</div>
+	</div>
+	<code>
+	<xmp>
+	<div class="grid-5">
+		<div class="grid-content">Item 1</div>
+		<div class="grid-content">Item 2</div>
+		<div class="grid-content">Item 3</div>
+		<div class="grid-content">Item 4</div>
+		<div class="grid-content">Item 5</div>
+		<div class="grid-content">Item 6</div>
+		<div class="grid-content">Item 7</div>
+		<div class="grid-content">Item 8</div>
+		<div class="grid-content">Item 9</div>
+		<div class="grid-content">Item 10</div>
+	</div>
+	</xmp>
+	</code>
+	<p class="emphasis">Customization options:</p>
+	<p><ul>
+	<li>Border removal class: <span class="snippet">rm-border</span></li>
+	</ul></p>
+	<p id="table" class="title1">Table</p>
+	<table>
+	<tr>
+	<th>Topic 1</th>	
+	<th>Topic 2</th>	
+	<th>Topic 3</th>	
+	<th>Topic 4</th>	
+	</tr>
+	<tr>
+	<td>Item</td>	
+	<td>Item</td>	
+	<td>Item</td>	
+	<td>Item</td>	
+	</tr>	
+	<tr>
+	<td>Item</td>	
+	<td>Item</td>	
+	<td>Item</td>	
+	<td>Item</td>	
+	</tr>	
+	<tr>
+	<td>Item</td>	
+	<td>Item</td>	
+	<td>Item</td>	
+	<td>Item</td>	
+	</tr>	
+	<tr>
+	<td>Item</td>	
+	<td>Item</td>	
+	<td>Item</td>	
+	<td>Item</td>	
+	</tr>
+	</table>
+	<code>
+	<xmp>
+	<table>
+		<tr>
+			<th>Topic 1</th>	
+			<th>Topic 2</th>	
+			<th>Topic 3</th>	
+			<th>Topic 4</th>	
+		</tr>
+		<tr>
+			<td>Item</td>	
+			<td>Item</td>	
+			<td>Item</td>	
+			<td>Item</td>	
+		</tr>	
+		<tr>
+			<td>Item</td>	
+			<td>Item</td>	
+			<td>Item</td>	
+			<td>Item</td>	
+		</tr>	
+		<tr>
+			<td>Item</td>	
+			<td>Item</td>	
+			<td>Item</td>	
+			<td>Item</td>	
+		</tr>	
+		<tr>
+			<td>Item</td>	
+			<td>Item</td>	
+			<td>Item</td>	
+			<td>Item</td>	
+		</tr>
+	</table>
+	</xmp>
+	</code>
+	<p class="emphasis">Other options:</p>
+	<p><ul>
+	<li>Border removal class: <span class="snippet">rm-border</span></li>
+	</ul></p>
+	
+	<p id="typography" class="title1">Typography</p>
+	<p class="emphasis">Text classes:</p>
+	<p>
+	<ul>
+	<li>Header text: <span class="snippet">header-text</span></li>
+	<li>Title 1: <span class="snippet">title1</span></li>
+	<li>Title 2: <span class="snippet">title2</span></li>
+	<li>Text highlight: <span class="snippet">snippet</span></li>
+	</ul>
+	</p>
+	<p>Examples:</p>
+	<ul>
+		<li><span class="header-text">Header</span></li>
+		<li><span class="title1">Title 1</span></li>
+		<li><span class="title2">Title 2</span></li>
+		<li><span class="snippet">Text Highlight</span></li>
+	</ul>
+	<p class="emphasis">Text position classes:</p>
+	<ul>
+		<li>Left align: <span class="snippet">text-left</span></li>
+		<li>Right align: <span class="snippet">text-right</span></li>
+		<li>Centered align: <span class="snippet">text-center</span></li>
+		<li>Justify: <span class="snippet">text-justify</span></li>
+	</ul>
+	<p class="emphasis">Text style classes:</p>
+	<ul>
+		<li>Bold text class: <span class="snippet">emphasis</span></li>
+		<li>Italic text class: <span class="snippet">italic</span></li>
+		<li>Underline text class: <span class="snippet">underline</span></li>
+		<li>Capitalize text class: <span class="snippet">all-capitalize</span></li>
+		<li>Uppercase text class: <span class="snippet">all-uppercase</span></li>
+		<li>Lowercase text class: <span class="snippet">all-lowercase</span></li>
+	</ul>
+	<p id="color" class="title1">Color</p>
+	<p>Static.css does not contain every color as it was built to be a light css facility. How ever I included some popular color to use as text/background. If this does not satisfy your need, it is recommended to use the provided code after the color table to override existing colors.</p>
+	<p class="emphasis">Background/text color classes:</p>
+	<table>
+		<tr>
+			<th>Color</th>	
+			<th>background class</th>	
+			<th>text class</th>		
+		</tr>
+		<tr>
+			<td class="bg-black"></td>	
+			<td>bg-black</td>	
+			<td>t-black</td>		
+		</tr>
+		<tr>
+			<td class="bg-dark-gray"></td>	
+			<td>bg-dark-gray</td>	
+			<td>t-dark-gray</td>		
+		</tr>
+		<tr>
+			<td class="bg-gray"></td>	
+			<td>bg-gray</td>	
+			<td>t-gray</td>		
+		</tr>
+		<tr>
+			<td class="bg-white"></td>	
+			<td>bg-white</td>	
+			<td>t-white</td>		
+		</tr>
+		<tr>
+			<td class="bg-red"></td>	
+			<td>bg-red</td>	
+			<td>t-red</td>		
+		</tr>
+		<tr>
+			<td class="bg-orange"></td>	
+			<td>bg-orange</td>	
+			<td>t-orange</td>		
+		</tr>
+		<tr>
+			<td class="bg-yellow"></td>	
+			<td>bg-yellow</td>	
+			<td>t-yellow</td>		
+		</tr>	
+		<tr>
+			<td class="bg-navy-blue"></td>	
+			<td>bg-navy-blue</td>	
+			<td>t-navy-blue</td>		
+		</tr>
+		<tr>
+			<td class="bg-acqua"></td>	
+			<td>bg-acqua</td>	
+			<td>t-acqua</td>		
+		</tr>
+		<tr>
+			<td class="bg-green"></td>	
+			<td>bg-green</td>	
+			<td>t-green</td>		
+		</tr>
+			<tr>
+			<td class="bg-green rm-bg"></td>	
+			<td>rm-bg</td>	
+			<td>Not applicable</td>		
+		</tr>
+	</table>
+	
+	<p class="emphasis">Change default background:</p>
+	<p>Background color of the HTML is set to a yellowish color by default. If you want to change the color, then copy &amp; paste the following code in your HTML file.</p>
+	<code>
+	<xmp>
+	<style>
+	html{
+		background-color: white;
+	}	
+	</style>
+	</xmp>
+	</code>
+	<p id="image" class="title1">Image</p>
+	<p class="emphasis">Image position class:</p>
+	<p>
+	<ul>
+		<li>Left align: <span class="snippet">image-left</span></li>
+		<li>Right align: <span class="snippet">image-right</span></li>
+		<li>Centered align: <span class="snippet">image-center</span></li>
+		<li>Multiple image side by side: <span class="snippet">image-image-same-line</span></li>
+	</ul>
+	</p>
+	<p class="emphasis">Image shapes and sizes:</p>
+	<p>Round shape:</p>
+	<p>Class <span class="snippet">image-profile</span> + any size class (<span class="snippet">image-sm</span> / <span class="snippet">image-md</span> / <span class="snippet">image-lg</span>).</p>
+	<img src="./image/cat-profile.jpeg" alt="random image profile" class="image-profile image-sm">
+	<p>Small size:</p>
+	<p>Class <span class="snippet">image-sm</span></p>
+	<img src="./image/vintage-car.jpeg" alt="random image" class="image-sm">
+	<p>Medium size:</p>
+	<p>Class <span class="snippet">image-md</span></p>
+	<img src="./image/vintage-car.jpeg" alt="random image" class="image-md">
+	<p>Large size:</p>
+	<p>Class <span class="snippet">image-lg</span></p>
+	<img src="./image/vintage-car.jpeg" alt="random image" class="image-lg">
+	<p class="emphasis">Other options:</p>
+	<p><ul>
+	<li>Border removal class: <span class="snippet">rm-border</span></li>
+	</ul></p>
+	<p id="footer" class="title1">Footer</p>
+	<p>footer tag: <span class="snippet">footer</span></p>
+	<code>
+	<xmp>
+	<footer>
+	<p>An open source light css library.</p>
+	</footer>
+	</xmp>
+	</code>
+	</div>
+</body>
+	<footer>
+	<p>An open source light css library</p>
+	</footer>
+</html>
